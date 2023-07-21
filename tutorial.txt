@@ -1,0 +1,80 @@
+Fastattack's text file editor tutorial
+
+Welcome to Fastattack's text file editor tutorial, this file will present you the functionnalities of this text editor
+
+
+The functionnalities will be presented as follows:
+
+FUNCTIONNALITY'S MENU:
+- Functionnality name (key binding to this functionnality):
+   What does the functionnality do and how to use it
+   Sometimes an example to understand it better
+
+- Next functionnality (binding):
+
+I hope you will enjoy using this text editor
+
+
+FILE MENU:
+- New (CTRL + n):
+   This functionnality opens a "save as" window to create a new file. To create a file just navigate to the folder you want to create the file and name it. If you do not add an extension to the file, it will
+   automaticaly be set as".txt". To create a file without extension add a "." at the end of the file name.
+
+- Load (CTRL + l):
+   This functionnality opens a "open" window to select the file to load. Even if the loading is aborted, any opened file will be closed.
+
+- Save (CTRL + s):
+   This functionnality saves the entered text to the loaded file. If no files are loaded: a "save as" window will open to save the file. If you delete a file while it's opened, saving will recreate the file.
+
+- Switch edition mode (CTRL + e):
+  This functionnality allows you to switch to the readonly mode, in this state you cannot edit the entered text (this tutorial file should be oppened in this mode) but you can still use functionnalities like
+   search. You can only use the readonly mode when a file is loaded. To see if you are in readonly mode, just look at the window's title, it should indicate it. To switch back to the normal mode, just click the
+   button once more. Certain files (like the tutorial one) are "forced readonly" and cannot be modified.
+
+- Close (no binding):
+   This functionnality closes the opened file. If the opened file isn't saved, the text editor will ask you if you want to save it.
+
+
+EDIT MENU:
+- Undo (CTRL + z):
+   Undoes the last modification if there was any.
+
+- Redo (CTRL + SHIFT + z):
+   Redoes the last undone modification if there was any.
+
+- Copy (CTRL + c):
+   Copies the highlighted text if there is any.
+
+- Cut (CTRL + x):
+   Copies and delete the highlighted text if there is any.
+
+- Paste (CTRL + v):
+   Adds the copied text at the cursor position in the text.
+
+- Font (no bindings):
+   Dropdown menu to change the active font. If "Enter font..." is selected, a window will ask to enter a font name to change to. The fonts available depands on what fonts are installed on your computer.
+   To change the font by "Enter font..." you should write the font name exactly the same as the installed file. The font is applied to all characters and cannot be applied only to a part of the text.
+   The default font is calibri.
+
+- Size (no bindings):
+   Dropdown menu to change the active size. If "Enter size..." is selected, a window will ask to enter a size to change to. The minimum size is 1, the maximum size is 250. The size is applied to all characters
+   and cannot be applied only to a part of the text. The default size is 11.
+
+
+SEARCH MENU:
+- Modify search (CTRL + f):
+   Opens a window asking a text to search in the text. If the text to search isn't found in the text, the search will be still be active. If nothing is entered in the entry, the actual search will be stopped. If the
+   searched text is found: all the occurrences will be highlighted and the cursor will be placed at the first one. The highlighting is updating only when a search is modified, the actual occurence is changed or
+   when the search info window is opened.
+
+- Stop search (CTRL + SHIFT + f):
+   Stops the search if any is active.
+
+- Previous occurrence (CTRL + p):
+   Place the text cursor at the previous occurrence. If the actual occurrence is the first: the cursor will be placed at the last one.
+
+- Next occurrence (CTRL + p):
+   Place the text cursor at the next occurrence. If the actual occurrence is the last: the cursor will be placed at the first one.
+
+- Search info (CTRL + ALT + f):
+   Opens a window telling if a search is active. If a search is active, the window will also tell what is searched, what is the actual occrrence out of all.
