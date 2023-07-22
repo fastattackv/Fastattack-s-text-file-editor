@@ -3,6 +3,7 @@ from tkinter import font
 from tkinter import messagebox, filedialog, simpledialog
 from sys import argv
 import re
+from os import getlogin
 import webbrowser
 
 
@@ -28,7 +29,7 @@ def load(file=""):
     global active_file, saved
     if (active_file != "" and close()) or active_file == "":
         if file == "":
-            file = filedialog.askopenfilename(title="Open")
+            file = filedialog.askopenfilename(title="Open", initialdir=rf"C:\Users\{getlogin()}\Desktop")
         if file != "":
             try:
                 with open(file, "r") as file_opened:
@@ -54,7 +55,7 @@ def create(loa=True):
     :param loa: True if the file needs to be loaded after creation
     """
     global active_file
-    file = filedialog.asksaveasfilename(title="Save as")
+    file = filedialog.asksaveasfilename(title="Save as", initialdir=rf"C:\Users\{getlogin()}\Desktop")
     if file != "":
         if "." not in file:
             file += ".txt"
@@ -225,7 +226,7 @@ def font_calibri():
 
 
 def font_TimesNewRoman():
-    global_font.config(family="Arial")
+    global_font.config(family="Times New Roman")
 
 
 def font_pixelated():
@@ -338,7 +339,7 @@ def help_tutorial():
 
 
 def help_github():
-    webbrowser.open("https://github.com/fastattackv")
+    webbrowser.open("https://github.com/fastattackv/Fastattack-s-text-file-editor")
 
 
 def mode_update():
@@ -480,3 +481,10 @@ else:
     load(active_file)
 
 fen.mainloop()
+
+"""TODO:
+- window system to have several files opened
+- File to store the default font/size... (being able to modify default font and size)
+- update tutorial file when all modifications are done
+- installer file (downloading + installing app + adding app to the "open with" directory)
+"""
