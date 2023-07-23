@@ -481,10 +481,3 @@ else:
     load(active_file)
 
 fen.mainloop()
-
-"""TODO:
-- window system to have several files opened
-- File to store the default font/size... (being able to modify default font and size)
-- update tutorial file when all modifications are done
-- installer file (downloading + installing app + adding app to the "open with" directory)
-"""
